@@ -17,6 +17,8 @@ function updateSeoForRoute(key){
   const title=data ? `${data.title} | Raha College NSS` : 'Raha College NSS | National Service Scheme | Raha, Nagaon, Assam';
   document.title=title;
   const canonical=document.querySelector('link[rel="canonical"]');
+  if(canonical){ canonical.href='https://rahacollegenss.in/'+(key ? '?page='+encodeURIComponent(key) : ''); }
+  const canonical=document.querySelector('link[rel="canonical"]');
   if(canonical){
     canonical.href='https://rahacollegenss.in/'+(key ? '?page='+encodeURIComponent(key) : '');
   }
@@ -44,6 +46,7 @@ function renderVolunteers(){
 renderVolunteers();
 
 let activePageLoad = 0;
+async let activePageLoad = 0;
 async function showPage(key){
   const requestId = ++activePageLoad;
   const data = pageContent[key];
