@@ -1,0 +1,79 @@
+/* === ENTRY CONSENT UPGRADE === */
+.entry-consent-modal{max-height:min(90vh,820px);overflow:auto}
+.entry-consent-modal h2{color:var(--clay-dark)!important}
+.entry-consent-modal p{color:var(--clay-muted);line-height:1.7}
+.terms-list{padding-left:20px;margin:16px 0 18px}
+.terms-list li{color:var(--clay-text);line-height:1.55;margin:8px 0}
+.consent-stack{display:grid;gap:10px}
+.clay-check{display:flex;gap:11px;align-items:flex-start;padding:13px 14px;background:var(--clay-surface);border:1px solid rgba(18,48,37,.10);border-radius:17px;color:var(--clay-text);font-size:13px;line-height:1.5;box-shadow:var(--clay-inset)}
+.clay-check input{width:19px;height:19px;accent-color:var(--clay-accent);margin-top:1px;flex:none}
+.consent-link{color:var(--clay-accent);font-weight:800;text-decoration:underline;text-underline-offset:2px}
+.terms-accept:disabled{opacity:.45;cursor:not-allowed;transform:none}
+@media(max-width:600px){.entry-consent-modal{max-height:92vh;padding:22px!important}.terms-list{font-size:13px}.clay-check{font-size:12.5px}}
+
+/* Entry Terms & Conditions modal */
+.terms-overlay{
+  position:fixed;inset:0;z-index:2000;display:grid;place-items:center;
+  padding:20px;background:rgba(3,15,38,.78);backdrop-filter:blur(12px);
+}
+.terms-modal{
+  width:min(620px,100%);max-height:min(88vh,760px);overflow:auto;
+  background:#fff;border:3px solid var(--red);border-radius:30px;
+  box-shadow:0 35px 100px rgba(0,0,0,.35);padding:30px;
+}
+.terms-badge{
+  width:58px;height:58px;border-radius:50%;background:var(--blue);
+  color:#fff;display:grid;place-items:center;font-size:25px;margin-bottom:18px;
+}
+.terms-modal h2{font-size:32px;margin-bottom:8px;color:var(--blue)}
+.terms-modal>p{color:var(--muted);line-height:1.65}
+.terms-list{margin:18px 0;padding-left:20px}
+.terms-list li{margin:9px 0;color:var(--ink);line-height:1.5}
+.terms-check{
+  display:flex;gap:11px;align-items:flex-start;padding:15px;
+  background:#f3f7ff;border:1px solid var(--line);border-radius:17px;
+  color:var(--ink);font-size:13px;line-height:1.5;margin-top:20px;
+}
+.terms-check input{width:19px;height:19px;accent-color:var(--red);margin-top:1px;flex:none}
+.terms-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:20px}
+.terms-actions button{border:0}
+.terms-deny{background:#eef2f8;color:var(--blue)}
+.terms-accept:disabled{opacity:.45;cursor:not-allowed;transform:none}
+@media(max-width:600px){
+  .terms-modal{padding:23px;border-radius:24px}.terms-modal h2{font-size:27px}
+  .terms-actions{flex-direction:column}.terms-actions .btn{width:100%}
+}
+
+.reveal{opacity:0;transform:translateY(30px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:900px){
+  .navlinks{display:none}.menu{display:grid;place-items:center;margin-left:auto}.nav-inner{padding:10px 16px}
+  .nav.open .navlinks{display:flex;position:absolute;top:70px;left:12px;right:12px;background:#fff;border:1px solid var(--line);border-radius:24px;padding:12px;flex-direction:column;box-shadow:var(--shadow)}
+  .hero-grid,.nss-about,.leaders,.college-feature,.compare{grid-template-columns:1fr}
+  .hero{min-height:auto;padding-top:65px;padding-bottom:170px}.hero-card{transform:none}
+  .volunteers{grid-template-columns:repeat(3,1fr)}
+  .quick{grid-template-columns:1fr 1fr}
+  .footer-grid{grid-template-columns:1fr 1fr}
+  .join{padding:38px}
+}
+@media(max-width:600px){
+  .student-leader-grid,.history-grid,.leadership-stats{grid-template-columns:1fr}
+  .editor-grid label.full{grid-column:auto}
+  .volunteer-tools{display:block}
+  .volunteer-tools .btn{margin-top:15px;width:100%}
+  .topbar{font-size:10px;text-align:center;padding:0 10px}
+  .brand{min-width:0}.brand span{display:none}
+  .hero h1{font-size:52px}.hero p{font-size:16px}
+  .section{padding:78px 16px}.section-head{display:block;margin-bottom:32px}
+  .section-head p{margin-top:18px}
+  .volunteers{grid-template-columns:repeat(2,1fr)}
+  .stat-grid,.quick{grid-template-columns:1fr}
+  .gallery-card{min-width:86vw}
+  .footer{padding:45px 16px 25px}.footer-grid{grid-template-columns:1fr 1fr;gap:25px}
+  .copyright{display:block}.copyright span{display:block;margin-top:8px}
+  .page{padding:55px 16px}.page-card{padding:28px 22px;border-radius:25px}
+}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}.reveal{opacity:1;transform:none;transition:none}.btn,.vol{transition:none}
+}
+
