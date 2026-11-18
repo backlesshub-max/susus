@@ -30,14 +30,7 @@
 <script>
 (function(){
   const canonical=document.querySelector('link[rel="canonical"]');
-  if(!canonical)return;
-  const url=new URL(window.location.href);
-  const page=url.searchParams.get('page');
-  if(page){
-    canonical.href='https://rahacollegenss.in/?page='+encodeURIComponent(page);
-  }else{
-    canonical.href='https://rahacollegenss.in/';
-  }
+  if(canonical) canonical.href='https://rahacollegenss.in/';
 })();
 </script>
 
