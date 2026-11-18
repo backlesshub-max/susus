@@ -18,7 +18,7 @@ function updateSeoForRoute(key){
   document.title=title;
   const canonical=document.querySelector('link[rel="canonical"]');
   if(canonical){
-    canonical.href='https://rahacollegenss.in/'+(key ? '?page='+encodeURIComponent(key) : '');
+    canonical.href='https://rahacollegenss.in/';
   }
   let meta=document.querySelector('meta[name="description"]');
   if(meta && data){
