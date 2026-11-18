@@ -1,6 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://rahacollegenss.in/</loc>
-  </url>
+  <url><loc>https://rahacollegenss.in/</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=join</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=faq</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=terms</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=email-consent</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=copyright</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=privacy</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=developer</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=report</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=notice</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=events</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=certificate</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=id-card</loc></url>
+  <url><loc>https://rahacollegenss.in/?page=disclaimer</loc></url>
 </urlset>
